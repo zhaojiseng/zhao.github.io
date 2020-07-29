@@ -8,3 +8,58 @@
 <a>1.js</a>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>list by:zhaojiseng</title>
+</head>
+<body>
+
+<button type ="button" id="b11">1.js</button>
+<label for="textArea"></label><textarea id="textArea"></textarea>
+<script type="application/javascript">
+    let xmlhttp;
+    xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange=function getAlready() {
+        if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
+            let allText;
+            allText = xmlhttp.responseText;
+            document.getElementById("textArea").value = allText;
+        }
+    };
+
+    document.getElementById("b11").onclick = function (){
+        xmlhttp.open("GET","1.js",true);
+        xmlhttp.send();
+    };
+</script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>list by:zhaojiseng</title>
+</head>
+<body>
+
+<button type ="button" id="b11">1.js</button><br>
+<label for="textArea"></label><textarea id="textArea"></textarea>
+<script type="application/javascript">
+    let xmlhttp;
+    xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange=function getAlready() {
+        if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
+            let allText;
+            allText = xmlhttp.responseText;
+            document.getElementById("textArea").value = allText;
+        }
+    };
+
+    document.getElementById("b11").onclick = function (){
+        xmlhttp.open("GET","1.js",true);
+        xmlhttp.send();
+    };
+</script>
+</body>
+</html>
